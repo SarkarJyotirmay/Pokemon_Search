@@ -199,6 +199,7 @@ function displayPokemons(arr) {
 search.addEventListener("keyup", (e) => {
   let filteredData = [];
   let input = e.target.value;
+  input = input.toLowerCase();
   filteredData = finalData.filter((obj) => {
     return obj.name.includes(input);
   });
